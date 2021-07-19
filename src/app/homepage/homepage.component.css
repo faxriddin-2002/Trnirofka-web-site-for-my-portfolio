@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+.Home-page {
+    background-color: rgba(41, 36, 36, 0.815);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.Home-page .homepage-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.homepage-inner .img-with-text {
+    width: 28%;
+    height: 65vh;
+    background-size: cover;
+    object-fit: cover;
+    background-image: url(../../assets/heml.png);
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.img-with-text .container {
+ margin: auto;
+ position: relative;
+ top: 100px;
+ left: 45px;
+ align-items: center;
+ text-align: center;
+}
+
+.img-with-text .container h5 {
+    text-align: left;
+    font-size: 16px;
+    font-family: lato;
+    color:white;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.img-with-text .container h1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    color:white;
+    font-family: lato;
+    width: 80%;
+    margin-left: 20px
+}
+
+.img-with-text .container button {
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.homepage-inner .img .img-man {
+    background-image: url(../../assets/trnirofka.png);
+    width: 45%;
+    height: 80%;
+    text-align: right;
+}
+
+
+
+
