@@ -4,6 +4,10 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "animate.css/animate.min.css";
 
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
 
 

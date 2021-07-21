@@ -1,0 +1,127 @@
+.navbar-real {
+    width: 100%;
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
+    background-color: 151515;
+    z-index: 100;
+}
+
+.navbar-real .navbar-header1 {
+    width: 100%;
+    height: 47px;
+    display: flex;
+    /* margin-top: -20px; */
+}
+
+.navbar-header1 .icon1 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    margin-top: 5px;
+}
+
+.navbar-header1 .icon1::after {
+    content: "";
+    width: 480px;
+    height: 1px;
+    background-color: black;
+    position: relative;
+   margin-top: 42px;
+   margin-left: -130px;
+}
+
+.navbar-header1 .icon2 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    margin-top: 5px;
+}
+
+.navbar-header1 .icon2::before {
+    content: "";
+    width: 580px;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    margin-top: 42px;
+    margin-left: -120px;
+}
+
+.navbar-header1 .navbar-img {
+    width: 20%;
+    height: 100%;
+    background-size: cover;
+}
+.navbar-header1 .navbar-img .navbar-img-inner {
+    width: 95px;
+    height: 112px;
+    background-image: url(../../assets/heml.png);
+    background-size: cover;
+    z-index: 15;
+    animation-name: navbar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes navbar {
+    100% {transform: rotate(360deg); transition-timing-function: ease}
+}
+
+.navbar-header1 .icon1 p {
+    /* vertical-align: baseline; */
+    text-align: left;
+    padding: 10px;
+    font-size: 10px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.navbar-header1 .icon2 p {
+    padding: 10px;
+    font-size: 10px;    
+    text-align: right;
+    font-family: sans-serif;
+    color: white;
+}
+
+.navbar-real .navbar-center {
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.navbar-real .navbar-center .navbar-center-left {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+}
+
+
+.navbar-real .navbar-center .navbar-center-right {
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    display: flex;
+}
+
+.navbar-real .navbar-center .navbar-center-left h4 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: white;
+    padding: 10px;
+}
+
+.navbar-real .navbar-center .navbar-center-right h4 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: white;
+    padding: 10px;
+    margin-right: 0px;   
+}
+
