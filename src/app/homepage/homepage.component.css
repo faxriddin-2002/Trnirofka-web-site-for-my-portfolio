@@ -2,7 +2,8 @@
 .Home-page {
     background-color: rgba(41, 36, 36, 0.815);
     width: 100%;
-    height: 100%;
+    height: 119vh;
+    overflow: hidden;
 }
 
 .Home-page .homepage-inner {
@@ -21,11 +22,37 @@
     background-color: red;
     color: white;
     animation-name: homepage;
-    animation-duration: 5s;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+
+.Home-page .container .menu {
+    font-size: 26px;
+    color: red;
+    position: relative;
+    /* right: -400px; */
+    display: none;
+}
+
+.Home-page .container .menu:hover {
+  cursor: pointer;
+  font-size: 26px;
+  color: black;
+}
+
+
+.Home-page .container .menu2{
+    transform: rotate(90deg);
+    font-size: 26px;
+    color: red;
+    position: relative;
+    /* right: -400px; */
+    display: none;
 }
 
 @keyframes homepage {
-    100% {left: 0px; transition-timing-function: ease;}
+    50%{left: 0px; transition-timing-function: ease}
+    100%{left: -700px; trasitions-timing-function: linear}
 }
 .homepage-inner .img-with-text {
     width: 100%;
@@ -34,8 +61,7 @@
     /* background-color: black; */
 }
 
-.homepage-inner
- .img-with-text .img-text {
+.homepage-inner .img-with-text .img-text {
     width: 490px;
     height: 555px;
     background-image: url(../../assets/heml.png);
@@ -44,16 +70,24 @@
     margin-left: 20px;
     /* left: -600px; */
     position: relative;    
+    animation-name: home;
+    animation-duration: 3s;
 }
 
+@keyframes home {
+    0%{left: -700px;}
+    50%{left: 0px; trasitions-timing-function: linear}
+}
+
+
 .img-with-text .container {
- margin: auto;
- position: relative;
- top: 100px;
- left: 45px;
- align-items: center;
- text-align: center;
- padding-top: 40px;
+    top: 100px;
+    position: relative;
+    left: 45px;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    margin: auto;
 }
 
 .img-with-text .container h5 {
@@ -90,6 +124,29 @@
 .homepage-inner .img {
     width: 65%;
     height: 100%;
+    /* background-color: rgba(41, 36, 36, 0.815); */
+}
+
+@media screen and (max-width: 1318px) {
+    .homepage-inner .img-with-text .img-text {
+        width: 370px;
+        height: 410px;
+    }
+    .img-with-text .container h5 {
+        font-size: 12px;
+    }
+    .img-with-text .container h1 {
+        font-size: 20px;
+    }
+    .img-with-text .container button {
+        width: 120px;
+        height: 30px;
+        /* display: grid; */
+        text-align: center;
+    }
+    .img-with-text .container {
+        left: 15px;
+    }
 }
 
 .homepage-inner .img .img-man {
@@ -109,6 +166,51 @@
     background-size: cover;
     margin-top: 10px;
     margin-right: 60px;
+    position: relative;
+    animation-name: homeright;
+    animation-duration: 4s;
+    /* display: none; */
 }
 
+@keyframes homeright {
+    0%{right: -700px;}
+    100%{right: 0px; animation-timing-function: linear;}
+}
+
+@media screen and (max-width: 1000px) {
+    .homepage-inner .img-with-text .img-text {
+        display: none;
+    }
+
+    .Home-page .container .menu {
+      display: block;
+      left: 0px;
+    }
+
+    .Home-page .container .menu2 {
+        display: block;
+        left: 0px;
+    }
+
+    .homepage-inner .img .img-man {
+      margin-left: 350px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Home-page .container .menu {
+        display: block;
+        position: relative;
+        left: 40px;
+    }
+    .Home-page .container .menu2{
+        display: block;
+        position: relative;
+        left: 40px;
+    }
+
+    .homepage-inner .img .img-man .img-man-iner{
+        display: none;
+    }
+}
 
