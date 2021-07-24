@@ -1,5 +1,98 @@
 .page2 {
     width: 100%;
-    height: 700px;
+    height: 110vh;
     background-color: black;
+    overflow-x: hidden;
+}
+
+.page2 .container .contener-inner {
+    display: flex;
+}
+
+.container .contener-inner .about-video {
+    width: 45%;
+    height: 500px;
+    text-align: left;
+    /* background-color: yellow;    */
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.container .contener-inner .about-text {
+    width: 45%;
+    height: auto;
+    text-align:left;
+    margin-left: 120px;
+    /* background-color: red; */
+    margin-top: 60px;
+    color: white;
+    position: relative;
+    right: -800px;
+}
+
+.contener-inner .about-text h1 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.contener-inner .about-text p {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: rgb(206, 204, 204);
+}
+
+.contener-inner .about-text p button {
+    margin: 10px;
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 6px 6px rgba(66, 65, 65, 0.226);
+}
+
+.contener-inner .about-text p .button {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contener-inner .about-text p .button1 {
+    background-color: inherit;
+    border-color: red;
+    color: white;
+} 
+
+@media screen and (max-width: 1000px) {
+    .page2 .container .contener-inner {
+        display: block;
+        width: 100%;
+    }
+   
+    .page2 {
+        height: 150vh;
+        overflow-x: hidden;
+    }
+    
+    .container .contener-inner .about-video {
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        /* background-color: yellow;    */
+        margin-top: 60px;
+    }
+
+    .container .contener-inner .about-text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        /* background-color: red; */
+        padding-top: 220px;
+        color: white;
+        position: relative;
+        right: -1000px;
+    }
+    
 }

@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Page2Component }  from './page2/page2.component';
+import { Page3Component } from './page3/page3.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     NavbarComponent,
-    Page2Component
+    Page2Component,
+    Page3Component
   ],
   imports: [
     BrowserModule,

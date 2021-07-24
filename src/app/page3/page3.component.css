@@ -1,0 +1,217 @@
+/* animation text */
+.page3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #262525;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.page3 .container .title3 {
+    text-align: center;
+    width: 40%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.page3 .container .title3 h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 35px;
+}
+
+.page3 .container .title3 p {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 12px;
+}
+
+.page3 .container .contener .text-animation1 {
+    width: 100%;
+    height: 40vh;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    margin-top: 70px;
+    /* overflow: hidden; */
+}
+
+.container .contener .text-animation1 .text-animation {
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    align-items: left;
+}
+
+.container .contener .text-animation1 .text-animation h2 {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+} 
+
+.container .contener .text-animation1 .text-animation p {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(221, 216, 216);
+} 
+
+
+.container .contener .text-animation1 .text-animation .p2 {
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    align-items: left;
+} 
+
+
+.container .contener .text-animation1 .text-animation .p2 i {
+    font-size: 27px;
+    color: #FF0000;
+    /* display: grid; */
+    text-align: left;
+    padding: 7px;
+    text-shadow: 4px 4px rgba(58, 57, 57, 0.267);
+} 
+
+.container .contener .text-animation1 .text-animation .p2 i:hover {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* card  and card text*/
+
+.page3 .container .video-animation {
+    width: 70%;
+    height:  40vh;
+    margin-left: 50px;
+    /* background-color:yellow; */
+    display: flex;
+    overflow-x: hidden;
+}
+
+.page3 .container .video-animation .card1 {
+    height: 214px;
+    width: 391px;
+    /* background-color: red; */
+    display: flex;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    position: relative;
+    left: 0px;
+    margin-right: 20px;
+    transition: 2s;
+}
+
+.page3 .container .video-animation .card1 .card-text {
+    width: 100px;
+    height: 100%;
+    text-align: left;
+    align-items: left;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    /* background-color: yellow; */
+}
+
+
+
+.video-animation .card1 .card-text .title-card {
+ width: 100px;
+ height: 170px;
+ align-items: left;
+ color: white;
+ margin-top: 10px;
+}
+
+.video-animation .card1 .card-text .title-card h3 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+}
+
+.video-animation .card1 .card-text .title-card p {
+     font-size: 12px;
+    font-family: sans-serif;
+    color: rgb(218, 212, 212);
+    font-weight: 500;
+    text-align: left;
+}
+
+.video-animation .card1 .card-text .learn-more {
+    width: 100px;
+    height: 70px;
+    text-align: left;
+    display: grid;
+}
+
+.video-animation .card1 .card-text .learn-more a {
+    font-size: 10px;
+    color:rgb(228, 227, 227);
+    font-family: sans-serif;
+    font-weight: 450;
+    text-decoration: none;
+}
+
+.video-animation .card1 .card-text .learn-more a:hover {
+    color: black;
+    font-size: 13px;
+}
+/* card img */
+
+.page3 .container .contener .text-animation1 .video-animation .card1 .card-img {
+    width: 291px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-animation .card1 .card-img .card-img-text {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    /* position: absolute; */
+}
+
+.video-animation .card1 .card-img .card-img-text .strok1 {
+    width: 42px;
+    height: 120%;
+    background-color: rgb(179, 174, 174);
+    transform: rotate(18deg);
+    position: relative;
+    top: -20px;
+}
+
+.video-animation .card1 .card-img .card-img-text .strok2 {
+    width: 17px;
+    height: 120%;
+    background-color: rgb(179, 174, 174);
+    transform: rotate(18deg);
+    position: relative;
+    top: -20px;
+    margin-left: 20px;
+}
+
+.video-animation .card1 .card-img .img-own img {
+    width: 70%;
+    height: 90%;
+    margin: auto;
+    /* background-image: url(../../assets/trnirofka.png); */
+    background-size: cover;
+    /* position: absolute; */
+    position: relative;
+    top: -180px;
+    text-shadow: 4px 4px rgb(194, 194, 194);
+}
+
