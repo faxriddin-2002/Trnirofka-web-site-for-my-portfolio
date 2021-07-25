@@ -1,0 +1,43 @@
+.page4 {
+    width: 100%;
+    height: auto;
+    background-color: #151515;
+}
+
+.page4 .container { 
+    align-items: center;
+    height: auto;
+}
+
+.page4 .container .title4 {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+}
+
+.page4 .container .title4 h1 {
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.page4 .container .title4 p {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .page4 .container .title4 h1 {
+        font-size: 30px;
+    }
+    .page4 .container .title4 p {
+        font-size: 10px;
+    }
+}

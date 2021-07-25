@@ -1,0 +1,179 @@
+.page4-foods {
+    width: 100%;
+    height: 600px; 
+    /* background-color: red; */
+    display: flex;
+    overflow: hidden
+}
+
+.page4-foods .page4-text1 {
+    width: 45%;
+    height: 90%;
+    overflow: hidden;
+    margin-top: 60px;
+    /* background-color: red; */
+    display: flex;
+    margin-left: 150px;
+    position: relative;
+    right: -700px;
+    transition: 2s;
+}
+
+.page4-foods .page4-text1 .one-time {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.page4-foods .page4-text1 .page4-day {
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  /* background-color: green; */
+  align-items: left;
+  /* background-color: red */
+} 
+
+.page4-foods .page4-text1 .page4-day h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    position: relative;
+    color: white;
+    text-align: left;
+    margin-top: 245px;
+}
+
+.page4-text1 .one-time .page4-big-time {
+    width: 100%;
+    height: 30%;
+    display: block;
+    justify-content: right;
+}
+
+.page4-text1 .one-time .page4-time {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    align-items: right;
+    display: block;
+    /* background-color: yellow; */
+}
+
+.one-time .page4-time h5 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family:sans-serif;
+    color: white;
+    text-align: right;
+    margin-top: 32%;
+}
+
+
+.one-time .page4-big-time ul {
+    width: 60%;
+    height: 100%;
+    display: block;
+    /* background-color: black; */
+    align-items: right;
+}
+
+.one-time .page4-big-time ul li{
+    padding: 4px;
+    /* overflow: hidden; */
+    text-align: right;
+    list-style-type: none;
+}
+
+.one-time .page4-big-time ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.one-time .page4-big-time ul li a::after {
+    content: " ";
+    width: 10px;
+    height: 5px;
+    background-color: white;
+    color: white;
+    position: relative;
+}
+
+.page4-foods .page4-img1 {
+  width: 45%;
+  height: 100%;
+  position: relative;
+  left: -800px;
+  transition: 2s;
+}
+
+.page4-foods .page4-img1 img {
+  width: 90%;
+  height: 90%;
+  background-size: cover;
+  margin: auto;  
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .page4-foods .page4-text1 {
+        width: 35%;
+        height: 80%;
+        /* background-color: yellow; */
+    }
+    .page4-foods .page4-text1 .page4-day h4 {
+        font-size: 14px;
+        margin-top: 230px;
+        text-align: left;
+    }    
+    .one-time .page4-time h5 {
+        font-size: 12px;
+        margin-top: 80%;
+    }
+    .page4-foods .page4-img1 img {
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+        margin: auto;  
+        margin-top: 60px;
+      }
+}
+
+@media screen and (max-width: 900px){
+    .page4-foods {
+        height: auto;
+        display: block;
+    }
+    .page4-foods .page4-img1 {
+        width: 100%;
+        height: auto;
+    }
+    .page4-foods .page4-img1 img {
+        width: 70%;
+        height: 70%;
+        margin: auto;
+      }
+      .page4-foods .page4-text1 {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .one-time .page4-time h5 {
+        font-size: 16px;
+        margin-top: 0px;
+        margin: 60px 0px 60px 0px;
+    }
+    .page4-foods .page4-text1 .page4-day h4 {
+        font-size: 20px;
+        margin-top: 210px;
+        text-align: left;
+    }
+    .page4-text1 .one-time .page4-time {
+        position: relative;
+        top: -20px;
+    }    
+}

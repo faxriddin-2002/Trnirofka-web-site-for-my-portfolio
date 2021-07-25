@@ -1,0 +1,37 @@
+<div class="page4-foods" (click)="go2()">
+    <div class="page4-img1">
+        <img src="../../assets/fitness-man.png">
+    </div>
+    <div class="page4-text1">
+        <div class="page4-day">
+            <h4 style="position: relative; top: -14px;">{{days2[indax2]}}</h4>
+    </div>
+        <div class="one-time">
+            <div class="page4-time" style="margin-top: 20px">
+                <div *ngFor="let t of tims2" style="height: 33%; display: grid;">
+                    <h5>{{t.time}}</h5>
+                </div>
+            </div>
+            <div class="page4-big-time">    
+                <ul *ngFor="let d of fitnes">
+                    <li>
+                        <a href="#">{{d.text}}</a>
+                    </li>
+                    <li>
+                        <a href="#">{{d.text1}}</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">{{d.text2}}</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">{{d.text3}}</a>
+                    </li>
+                </ul>
+            </div>
+            <!--day -->
+        </div>
+    </div>
+    <!-- page4 img -->
+</div>
