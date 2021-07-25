@@ -69,6 +69,14 @@
         display: block;
         width: 100%;
     }
+
+    .contener-inner .about-text h1 {
+        font-size: 25px;
+    }
+    
+    .contener-inner .about-text p {
+        font-size: 10px;
+    }
    
     .page2 {
         height: 150vh;
@@ -94,5 +102,5 @@
         position: relative;
         right: -1000px;
     }
-    
+
 }

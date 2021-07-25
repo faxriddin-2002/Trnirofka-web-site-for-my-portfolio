@@ -15,36 +15,81 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse animi minima fuga beatae sequi
                         natus at aliquid quis necessitatibus tenetur?</p>
                     <p class="p2">
-                        <i class="fas fa-arrow-circle-left" (click)="go()"></i>
-                        <i class="fas fa-arrow-circle-right" (click)="back()"></i>
+                        <i class="fas fa-arrow-circle-left" (click)="go()" id="left"></i>
+                        <i class="fas fa-arrow-circle-right" (click)="back()" id="right"></i>
                     </p>
                 </div>
                 <!-- card -real and text -->
                 <div class="video-animation">
                     <!-- <div [ngClass]="{'animate__animated':animation, 'animate__backOutLeft ': 'animate__backInRight'}"> -->
-                    <div class="card1" [style.background-color]="color2? '#ff0000':'rgb(82, 80, 80)'" >
-                        <div class="card-text">
-                            <div class="title-card">
-                                <h3>{{title}}</h3>
-                                <p>{{price}}</p>
+                    <div class="content">
+                        <div class="{{i.class}}" [ngStyle]="{'background-color': color2? '#ff0000':'rgb(82, 80, 80)'}" *ngFor ="let i of x">
+                            <div class="card-text">
+                                <div class="title-card">
+                                    <h3>{{i.title}}</h3>
+                                    <p>{{i.price}}</p>
+                                </div>
+                                <div class="learn-more">
+                                    <a routerLink="#">{{i.learnmore}}</a>
+                                </div>
                             </div>
-                            <div class="learn-more">
-                                <a routerLink="#">{{learn}}</a>
-                            </div>
-                        </div>
-
-         <!-- card img -->
-                        <div class="card-img">
-                            <div class="card-img-text">
-                                <div class="strok1"></div>
-                                <div class="strok2"></div>
-                            </div>
-                            <div class="img-own">
-                               <img src="">
+                            
+                            <!-- card img -->
+                            <div class="card-img">
+                                <div class="card-img-text">
+                                    <div class="strok1"></div>
+                                    <div class="strok2"></div>
+                                </div>
+                                <div class="img-own">
+                                    <img src={{i.img}}>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>    
+                </div>
+        </div>
+        <!-- com -->
+        <div class="contener">
+            <div class="text-animation1">
+<!--  card text -->
+                <div class="text-animation">
+                    <h2>Our Featured Class</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse animi minima fuga beatae sequi
+                        natus at aliquid quis necessitatibus tenetur?</p>
+                    <p class="p2">
+                        <i class="fas fa-arrow-circle-left" (click)="go2()" id="left1"></i>
+                        <i class="fas fa-arrow-circle-right" (click)="back2()" id="right1"></i>
+                    </p>
+                </div>
+                <!-- card -real and text -->
+                <div class="video-animation">
+                    <!-- <div [ngClass]="{'animate__animated':animation, 'animate__backOutLeft ': 'animate__backInRight'}"> -->
+                    <div class="content2">
+                        <div class="{{i.class}}" [ngStyle]="{'background-color': color2? '#ff0000':'rgb(82, 80, 80)'}" *ngFor ="let i of x2">
+                            <div class="card-text">
+                                <div class="title-card">
+                                    <h3>{{i.title}}</h3>
+                                    <p>{{i.price}}</p>
+                                </div>
+                                <div class="learn-more">
+                                    <a routerLink="#">{{i.learnmore}}</a>
+                                </div>
+                            </div>
+                            
+                            <!-- card img -->
+                            <div class="card-img">
+                                <div class="card-img-text">
+                                    <div class="strok1"></div>
+                                    <div class="strok2"></div>
+                                </div>
+                                <div class="img-own">
+                                    <img src={{i.img}}>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>    
                 </div>
         </div>
     </div>
