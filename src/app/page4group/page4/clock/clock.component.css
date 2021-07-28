@@ -7,7 +7,7 @@
 .clock .img4 {
     width: 200px;
     height: 100%;
-    background-image: url(../../assets/clock.png);
+    background-image: url(../../../../assets/clock.png);
     background-size: cover;
     margin: auto;
     position: relative;
@@ -72,7 +72,7 @@
     background-color: red;
     transform-origin: bottom;
     transition: 5s;    
-    transform: translateX(-50%) rotate(calc(var(--rotation) * 0deg));
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
     border-radius: 5px;
     z-index: 10;
 }

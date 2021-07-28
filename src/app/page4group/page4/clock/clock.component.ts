@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-clock',
   templateUrl: './clock.component.html',
@@ -8,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 export class ClockComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
     setInterval(setClock, 1000)
     const hourHand: any = document.querySelector(".hour");

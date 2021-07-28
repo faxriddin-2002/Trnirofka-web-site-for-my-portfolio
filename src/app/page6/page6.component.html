@@ -1,0 +1,26 @@
+<div class="page6over">
+    <div class="title6">
+     <h2>ANSWERS TO QUESTION</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta officiis sit aperiam doloremque fugit et architecto, expedita libero nostrum neque?</p>
+    </div>
+    <div class="container">
+        <div class="ansver-to-question" id="id3" #go3 *ngFor="let y of questions">
+            <div class="question">
+                    <h4>{{y.q}}</h4>
+                    <i class="fas fa-plus"  #one (click)="open(go3)" id="i1"></i>
+                    <i class="fas fa-minus" #two (click)="cloth(go3)"  id="i2"></i>
+                  </div>
+            <div class="ansver">
+                <h6>{{y.a}}</h6>
+            </div>
+          </div>
+          <div class="ansver-button" (click)="onAnsver()">
+                 <h6 class="h6text">Your Question<i class="fas fa-arrow-right"></i></h6>
+          </div>
+    </div>
+        <div *ngIf="buttonjon" class="animate__animated animate__fadeInDown" style="bottom: -20px; position: relative; height: 350px; width: 86%; margin: auto; overflow: hidden;">
+            <div class="ansver-page" style="width: 90%; height: auto; margin: auto;">
+                <app-page6-question></app-page6-question>
+            </div>
+    </div>
+</div>

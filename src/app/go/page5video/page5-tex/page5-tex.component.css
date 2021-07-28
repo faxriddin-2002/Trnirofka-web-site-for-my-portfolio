@@ -1,0 +1,143 @@
+.page5text {
+    width: 100%; 
+    height: 600px; 
+    /* background-color: red; */
+}
+
+.page5text .text-big {
+    width: 100%; 
+    height: 100%;
+    align-items: left;
+    justify-content: left;
+    display: block;
+    /* overflow: hidden; */
+}
+
+.page5text .text-big .one-section {
+    width: 100%; 
+    height: auto;
+    display: block;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.page5text .text-big .one-section .alwrm-with-icon p a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.page5text .text-big .one-section .alwrm-with-icon p a i {
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+.page5text .text-big .one-section .menu1 {
+    font-size: 27px;
+    margin-left: 10px;
+    color: white;
+}
+
+.page5text .text-big .one-section .alwrm-with-icon p a #acount {
+    color: rgb(72, 72, 243);
+}
+
+.page5text .text-big .one-section .alwrm-with-icon p a i:hover {
+    font-size: 20px;
+}
+
+.page5text .text-big .one-section .menu1:hover {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.page5text .text-big .one-section::after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    /* left: -50px; */
+}
+
+/* section two */
+
+.page5text .text-big .second-section {
+    padding-top: 12px;
+    padding-left: 5px;
+}
+
+.page5text .text-big .second-section a {
+  text-decoration: none;
+}
+
+.page5text .text-big .second-section a i {
+    color: white;
+    font-size: 22px;
+}
+
+.page5text .text-big .second-section a b {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 550;
+}
+
+/* .page5text .text-big .second-section a b:hover {
+    color: blue;
+} */
+
+/* section thourd */
+.page5text .text-big .thourd-section {
+    width: 100%;
+    height: auto;
+    margin-left: 27px;
+    padding-top: 10px;
+}
+
+.text-big .thourd-section .thourd-title h5 {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: white;   
+}
+
+.text-big .thourd-section .thourd-title h5 b{
+    font-size: 16px;
+  font-weight: 550;
+  font-family: sans-serif;
+  color: white;
+}
+
+.text-big .thourd-section .thour-plan {
+    margin-left: 30px;
+}
+
+.text-big .thourd-section .thour-plan a {
+    text-decoration: none;
+    color: rgb(190, 185, 185);
+    font-family: serif;
+    font-size: 12px;
+}
+
+.text-big .thourd-section .thour-plan a:hover {
+    color: rgb(255, 104, 93);
+}
+
+.page5text .text-big .four-section {
+    margin-left: 26px;
+    padding-top: 15px;
+}
+
+.page5text .text-big .four-section h4 {
+  font-size: 16px;
+  font-weight: 520;
+  font-family: sans-serif;
+  color: rgb(150, 150, 219);
+}
+
+.page5text .text-big .four-section h4:hover {
+    font-size: 17px;
+    cursor: pointer;
+}

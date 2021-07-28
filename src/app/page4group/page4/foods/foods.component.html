@@ -1,19 +1,8 @@
-<div class="page4-foods" (click)="go2()">
-    <div class="page4-img1">
-        <img src="../../assets/fitness-man.png">
-    </div>
-    <div class="page4-text1">
-        <div class="page4-day">
-            <h4 style="position: relative; top: -14px;">{{days2[indax2]}}</h4>
-    </div>
+<div class="page4-foods" (click)="go1()">
+    <div class="page4-text">
         <div class="one-time">
-            <div class="page4-time" style="margin-top: 20px">
-                <div *ngFor="let t of tims2" style="height: 33%; display: grid;">
-                    <h5>{{t.time}}</h5>
-                </div>
-            </div>
             <div class="page4-big-time">    
-                <ul *ngFor="let d of fitnes">
+                <ul *ngFor="let d of foods">
                     <li>
                         <a href="#">{{d.text}}</a>
                     </li>
@@ -30,8 +19,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="page4-time" style="margin-top: 20px">
+                <div *ngFor="let t of tims" style="height: 33%; display: grid;">
+                    <h5>{{t.time}}</h5>
+                </div>
+            </div>
             <!--day -->
+        </div>
+        <div class="page4-day">
+                <h4 style="position: relative; top: -14px;">{{days[indax]}}</h4>
         </div>
     </div>
     <!-- page4 img -->
+    <div class="page4-img">
+        <img src="../../../../assets/Group 31.png">
+    </div>
 </div>

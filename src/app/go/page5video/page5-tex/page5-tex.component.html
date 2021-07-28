@@ -1,0 +1,36 @@
+<div class="page5text">
+     <div class="text-big">
+         <!-- first -->
+         <div class="one-section">
+          <div class="menu1">
+            <i class="fas fa-bars"></i> 
+          </div>
+          <div class="alwrm-with-icon">
+            <p>
+               <a routerLink=""><i class="fas fa-user-circle" id="acount"></i></a>
+              <a routerLink=""><i class="fas fa-bell"></i></a>
+            </p>
+          </div>
+         </div>
+         <!-- second -->
+         <div class="second-section" style="margin-left: 20px;">
+          <a  routerLink=" "><p><i class="fas fa-home"></i>  <b style="margin-left: 10px; color: white">Home</b></p></a>
+          <a routerLink="yourVideo"><p><i class="fab fa-youtube"></i>  <b style="margin-left: 10px; color: white">Your Video</b></p></a>
+        <a routerLink="history">  <p><i class="fas fa-history"></i>  <b style="margin-left: 10px; color: white">History</b></p></a>
+        <a routerLink="Fevoryte"><p><i class="fas fa-plus-circle"></i>   <b style="margin-left: 10px; color: white">Your Chanels</b></p></a>
+         </div>
+         <!-- THourd -->
+         <div class="thourd-section">
+             <div class="thourd-title">
+                 <h5><b>Excersize Type:</b>Fitness</h5>
+             </div>
+             <div class="thour-plan" *ngFor="let y of fitnessPlan">
+                <a routerLink=""><p>{{y.man}}</p></a>
+             </div>
+         </div>
+         <!-- four -->
+         <div class="four-section">
+          <h4>News <i class="fas fa-arrow-right"></i></h4>
+         </div>
+     </div>
+</div>
