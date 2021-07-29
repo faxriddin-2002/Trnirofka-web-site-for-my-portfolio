@@ -27,6 +27,8 @@ import { Page6Component } from './page6/page6.component';
 import { Page6QuestionComponent } from './page6-question/page6-question.component';
 import { QuestionService } from './question.service';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { FormRequestService } from "./form-request.service"
 
 const routercha: Routes = [
   {path: ' ', component: HomeComponent},
@@ -64,8 +66,9 @@ const routercha: Routes = [
     BrowserAnimationsModule,
     NoopAnimationsModule,
     RouterModule.forRoot(routercha),
+    FormsModule
   ],
-  providers: [Page3sService, FoodsService, PageService3Service, PageServiceVideoService,  QuestionService],
+  providers: [Page3sService, FoodsService, PageService3Service, PageServiceVideoService,  QuestionService, FormRequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -33,11 +33,25 @@
         </p>
         <form>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Recipient's username"
-                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input
+                type="text" 
+                class="form-control" 
+                placeholder="Recipient's username"
+                aria-label="Recipient's username" 
+                aria-describedby="basic-addon2"
+                ngModel
+                #text="ngModel"
+                name="text"
+                required
+                minlength="10"
+                >
                 <span class="input-group-text" id="basic-addon2">@example.com</span>
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
+            <div class="alert alert-danger" *ngIf="text.touched && !text.valid">
+                <div *ngIf="text.errors && text.errors.required">Email ni to`ldirish majburiy</div>
+                <div *ngIf="text.errors && text.errors.minlength">Emali 10ta harifdan ko`p bo'lishi kerak</div>
+            </div>
         </form>
     </div>
  </div>

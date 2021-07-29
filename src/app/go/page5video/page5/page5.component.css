@@ -44,3 +44,17 @@
     color: white;
     text-align: center;
 }
+
+@media screen and (max-width: 900px) {
+    .page5 .title5 {
+        width: 60%;
+    }
+    
+    .page5 .title5 h1 {
+        font-size: 30px;
+    }
+    
+    .page5 .title5 p {
+        font-size: 10px;
+    }
+}

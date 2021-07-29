@@ -173,6 +173,53 @@
     /* display: none; */
 }
 
+@media screen and (max-width: 1100px) {
+    .img-with-text .container {
+        top: 30px;
+        position: relative;
+        left: 45px;
+        align-items: center;
+        text-align: center;
+        padding-top: 40px;
+        margin: auto;
+    }
+
+    .homepage-inner .img-with-text .img-text {
+        width: 300px;
+        height: 355px;
+    }
+    .img-with-text .container h5 {
+        text-align: left;
+        font-size: 12px;
+        font-family: lato;
+        color:white;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+    
+    .img-with-text .container h1 {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+        color:white;
+        font-family: lato;
+        width: 60%;
+        margin-left: 20px
+    }
+    
+    .img-with-text .container button {
+        margin-top: 5px;
+        margin-right: 100px;
+        width: 120px;
+        height: 35px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #FF0000;
+        color: white;
+        font-weight: 600;
+    }
+}
+
 @keyframes homeright {
     0%{right: -700px;}
     100%{right: 0px; animation-timing-function: linear;}

@@ -7,60 +7,87 @@
     padding: 0px;
     background-color: 151515;
     z-index: 100;
+    position: relative;
+}
+
+.navbar-real2 {
+    width: 100%;
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
+    background-color: 151515;
+    z-index: 100;
+    position: relative;
 }
 
 .navbar-real .navbar-header1 {
     width: 100%;
     height: 47px;
-    display: flex;
-    /* margin-top: -20px; */
+    display:inline-flex;
+}
+
+.navbar-real2 .navbar-header1 {
+    width: 100%;
+    height: 47px;
+    display:inline-flex;
 }
 
 .navbar-header1 .icon1 {
     width: 40%;
     height: 100%;
-    display: flex;
     margin-top: 5px;
-}
-
-.navbar-header1 .icon1::after {
-    content: "";
-    width: 420px;
-    height: 1px;
-    background-color: black;
     position: relative;
-    margin-top: 42px;
-    margin-left: -130px;
+    /* background-color: blue; */
 }
 
 .navbar-header1 .icon2 {
     width: 40%;
     height: 100%;
-    display: flex;
     margin-top: 5px;
+    position: relative;
+    /* background-color: green; */
+    justify-content: right;
+    align-items: right;
 }
 
-.navbar-header1 .icon2::before {
-    content: "";
-    width: 500px;
+.navbar-header1 .icon2 .div {
+    align-items: right;
+}
+
+.navbar-header1 .icon1 .div {
+    align-items: left;
+}
+
+.navbar-header1 .icon2 .div p {
+       float: right;
+}
+
+.navbar-header1 .icon1 .div p {
+     float: left;
+}
+
+.navbar-header1 .line {
+    width: 100%;
     height: 1px;
     background-color: black;
     position: relative;
-    right: -110px;
-    margin-top: 42px;
-    margin-left: -120px;
+    bottom: -40px;
 }
 
 .navbar-header1 .navbar-img {
     width: 20%;
     height: 100%;
     background-size: cover;
+    /* background-color: black; */
 }
 .navbar-header1 .navbar-img .navbar-img-inner {
-    width: 95px;
-    height: 112px;
+    width: 105px;
+    height: 123px;
+    position: relative;
     background-image: url(../../assets/heml.png);
     background-size: cover;
+    margin: auto;
+    /* background-color: yellow; */
     z-index: 15;
     animation-name: navbar;
     animation-duration: 2s;
@@ -97,19 +124,24 @@
     display: flex;
 }
 
-.navbar-real .navbar-center .navbar-center-left {
-    width: 50%;
-    height: 100%;
+.navbar-real2 .navbar-center {
+    width: 100%;
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
     display: flex;
-    text-align: left;
 }
 
-
-.navbar-real .navbar-center .navbar-center-right {
-    width: 50%;
+.navbar-real .navbar-center .navbar-center-left {
+    width: 35%;
     height: 100%;
-    display: flex;
-    text-align: right;
+    justify-content: left;
+}
+
+.navbar-real2 .navbar-center .navbar-center-left {
+    width: 35%;
+    height: 100%;
+    justify-content: left;
 }
 
 .navbar-real .navbar-center .navbar-center-left h4 {
@@ -118,6 +150,33 @@
     font-family: sans-serif;
     color: white;
     padding: 10px;
+    float: left;
+}
+
+.navbar-real2 .navbar-center .navbar-center-left h4 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: white;
+    padding: 10px;
+    float: left;
+}
+
+
+.navbar-real .navbar-center .navbar-center-right {
+    width: 35%;
+    height: 100%;
+    /* display: flex; */
+    /* align-items: right; */
+    justify-content: right;
+}
+
+.navbar-real2 .navbar-center .navbar-center-right {
+    width: 35%;
+    height: 100%;
+    /* display: flex; */
+    /* align-items: right; */
+    justify-content: right;
 }
 
 .navbar-real .navbar-center .navbar-center-right h4 {
@@ -126,7 +185,16 @@
     font-family: sans-serif;
     color: white;
     padding: 10px;
-    text-align: right;
+    float: right; 
+}
+
+.navbar-real2 .navbar-center .navbar-center-right h4 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: white;
+    padding: 10px;
+    float: right;
 }
 
 .navbar-header1 .icon2 p:hover {
@@ -147,6 +215,13 @@
     font-size:15px;
 }
 
+.navbar-real2 .navbar-center .navbar-center-right h4:hover {
+    color: red;
+    cursor: pointer;
+    font-size:15px;
+}
+
+
 
 .navbar-real .navbar-center .navbar-center-left h4:hover {
     color: red;
@@ -154,9 +229,14 @@
     font-size:15px;
 }
 
+.navbar-real2 .navbar-center .navbar-center-left h4:hover {
+    color: red;
+    cursor: pointer;
+    font-size:15px;
+}
 @media screen and (max-width: 1000px) {
     .navbar-real {
-        width: 30%;
+        width: 10%;
         height: auto;
         background-color: 151515;
         z-index: 100;
@@ -165,14 +245,18 @@
         margin-left: 0px;
         margin-top: 50px;
         transition: 2s;
+        /* background-color: green; */
+    }
+
+    .navbar-header1 .line {
+        display: none;
     }
 
     .navbar-real2 {
-        width: 30%;
+        width: 150%;
         height: auto;
         background-color: 151515;
         z-index: 100;
-        /* background-color: red; */
         position: absolute;
         margin-left: -470px;
         margin-top: 50px;
@@ -191,65 +275,50 @@
     .navbar-header1 .icon1 {
         width: 100%;
         height: auto;
-        display: block;
-        /* background-color: black; */
     }
-    .navbar-header1 .icon1::after {
-        display: block;
-        margin-top: 0px;
-        margin-left: 0px;
-        width: 100%;
-        top: -10px;
-    }
+
     .navbar-header1 .icon2 {
         width: 100%;
         height: auto;
+        align-items: left;
+    }
+    
+    .navbar-header1 .icon1 .div {
+        width: 100%;
+        height: auto;
         display: block;
-        text-align: left;
+        float: none;
+        /* background-color: black; */
+    }
+ 
+    .navbar-header1 .icon2 .div {
+        width: 100%;
+        height: auto;
+        justify-content: left;
         /* background-color: yellow; */
     }
-    .navbar-header1 .icon2::after {
-        content: "";
-        width: 100%;
-        height: 1px;
-        background-color: black;
-        position: relative;
-        display: block;
+
+    .navbar-header1 .icon2 .div p {
+        float: left;
     }
+
     .navbar-header1 .navbar-img .navbar-img-inner {
       display: none;
     }
   
-    .navbar-header1 .icon1 p {
-        margin-left: 80px;
-        margin-top: -10px;
-    }
-
-    .navbar-header1 .icon2 p {
-        margin-left: 80px;   
-        text-align: left;
-        margin-top: -20px;
-    }
-
     .navbar-real .navbar-center .navbar-center-left {
         width: 100%;
         height: auto;
-        text-align: left;
-        display: block;
     }
     .navbar-real .navbar-center .navbar-center-right {
         width: 100%;
         height: auto;
         display: block;
-    }
-    
-    .navbar-real .navbar-center .navbar-center-right h4{       
-        text-align: left;
-        margin-left: 80px;   
+        justify-content: left;
     }
 
-    .navbar-real .navbar-center .navbar-center-left h4 {
-        margin-left: 80px;   
+    .navbar-real .navbar-center .navbar-center-right h4 {
+            float: left;
     }
 
     .navbar-real .navbar-center {
@@ -263,45 +332,25 @@
 @media screen and (max-width: 900px) {
     .navbar-real {
         content: "";
-        width: 30%;
+        width: 15%;
         height: auto;
         background-color: 151515;
         z-index: 100;
         /* background-color: red; */
         position: absolute;
-        margin-left: 0px;
+        margin-left: 35px;
         margin-top: 50px;
     }
      
     .navbar-real2 {
-        width: 30%;
+        width: 15%;
         height: auto;
         background-color: 151515;
         z-index: 100;
-        /* background-color: red; */
+        /* background-color: yellow; */
         position: absolute;
         margin-left: -470px;
         margin-top: 50px;
     }
 
-    .navbar-real .navbar-center .navbar-center-right h4{       
-        text-align: left;
-        margin-left: 20px;   
-    }
-
-    .navbar-real .navbar-center .navbar-center-left h4 {
-        margin-left: 20px;   
-    }
-    .navbar-header1 .icon1 p {
-        margin-left: 20px;
-        margin-top: -10px;
-    }
-
-    .navbar-header1 .icon2 p {
-        margin-left: 20px;   
-        text-align: left;
-        margin-top: -20px;
-    }
 }
-
-/* page 2 */

@@ -1,11 +1,36 @@
-<div class="mb-3">
+<form #frm="ngForm" (ngSubmit)="onSubmit(frm.value)" >
+
+  <div class="mb-3 form-group">
     <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <input ngModel required minlength="6" maxlength="30"  #exampleFormControlInput1="ngModel" name="exampleFormControlInput1"  type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  (input)="onPageForm($event)"> 
+    <div class="alert alert-danger" *ngIf="exampleFormControlInput1.touched && !exampleFormControlInput1.valid">
+      <div *ngIf="exampleFormControlInput1.errors && exampleFormControlInput1.errors.required">Email kiritish majburiy</div>
+      <div *ngIf="exampleFormControlInput1.errors && exampleFormControlInput1.errors.minlength">Email 6 ta harifdan ko`p bo`lishi kerak</div>
+      <div *ngIf="exampleFormControlInput1.errors && exampleFormControlInput1.errors.maxLength">Email 30ta harifdan oshmasligi kerak</div>
+    </div>
   </div>
   <div class="mb-3">
     <label for="exampleFormControlTextarea1" class="form-label text-white">You`re question</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea ngModel required   minlength="6"
+    #exampleFormControlTextarea1="ngModel" 
+    name="exampleFormControlTextarea1" 
+    class="form-control" 
+    id="exampleFormControlTextarea1" 
+    rows="3" 
+    (input)="onTextAreaChange($event)"
+    >
+  </textarea>
+  <div class="alert alert-danger" *ngIf="exampleFormControlTextarea1.touched && !exampleFormControlTextarea1.valid">
+    <div *ngIf="exampleFormControlTextarea1.errors && exampleFormControlTextarea1.errors.required"> text bo`sh bo`lmasligi kerak</div>
+    <div *ngIf="exampleFormControlTextarea1.errors && exampleFormControlTextarea1.errors.minlength"> Matin 6ta harifdan ko`p bo`loshi kerak</div>
   </div>
-  <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+</div>
+<div class="col-auto">
+  <button type="submit" class="btn btn-primary mb-3">Submit</button>
+  <div style="color: white;">
   </div>
+</div>
+<div style="color: white;" *ngFor="let y of formObekt">
+    {{y.exampleFormControlTextarea1}}
+</div>
+</form>

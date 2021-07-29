@@ -136,3 +136,23 @@
     position: relative;
     top: -0px;
 }
+
+@media screen and (max-width: 900px) {
+    .page6over .title6 {
+        width: 60%;
+    }
+    
+    .page6over .title6 h2 {
+        font-size: 30px;
+    }
+    
+    .page6over .title6 p {
+        font-size: 12px;
+    }
+    .page6over .question h4 {
+        font-size: 12px;
+    }
+    .page6over .question i {
+        font-size: 10px;
+    } 
+}
